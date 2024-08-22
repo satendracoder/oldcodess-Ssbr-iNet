@@ -1,0 +1,43 @@
+<app-main-menu></app-main-menu>
+<div class="statics-ssbr">
+    <div class="statics-ssbr-row">
+        <div class="statics-ssbr-card">
+            <img src="assets/icons/microsoft-technologies.svg" alt="microsoft-technologies">
+        </div>
+        <div class="statics-ssbr-card">
+            <h1 class="spancolor">Microsoft Technologies</h1>
+            <p>Microsoft Office with Power BI refers to the integration of Microsoft Office applications, such as Excel,
+                with Power BI (Business Intelligence). Power BI is a suite of business analytics tools developed by
+                Microsoft that allows users to visualize and share insights from their data.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- hare are starting html List of statics Pages -->
+<div class="statics-item">
+    <div class="statics-item-row">
+        @for (data_item of Data_Analytics; track $index) {
+        <div class="statics-item-card" [title]="data_item.tutorialName">
+            <div class="statics-img">
+                <img [src]="data_item.tutorialImage" alt="">
+            </div>
+            <!-- <div class="statics-heading">
+                <h2>Html Tutorial</h2>
+            </div> -->
+            <div class="statics-link">
+                <div class="statics-link-group">
+                    <!-- <h2>Html Tutorial</h2>
+                    <br> -->
+                    <button><a [href]="data_item.tutorialNameUrl">{{data_item.tutorialName}}</a></button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+
+
+<app-best-guidance></app-best-guidance>
+<app-footer-card></app-footer-card>

@@ -1,0 +1,50 @@
+<section class="faq">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-8 text-center">
+                <div class="section-title">
+                    <h2>Frequently Asking <span>Question’s</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="GroupBtn">
+            <button><a href="/company/cookies_policy">&#10094; Previous</a></button>
+            <button><a href="/">Next &#10095;</a></button>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="row">
+                        @for (faqitem of FaqAsking; track $index) {
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        {{faqitem.faq_Name}}
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                                <div class="card-body"><br>
+                                    {{faqitem.faq_Answer}}
+                                </div>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="GroupBtn">
+        <button><a href="/company/cookies_policy">&#10094; Previous</a></button>
+        <button><a href="/">Next &#10095;</a></button>
+    </div>
+</section>

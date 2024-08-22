@@ -1,0 +1,42 @@
+<section class="banner">
+
+    @defer (on viewport) {
+    <div class="text-container">
+        <h1 class="banner-heading" appHoverdirective> Hi there..! <span class="spancolor">
+                <mat-icon>sync_alt</mat-icon>Learn to Code</span></h1>
+        <p>India's #1 Free Learn to Code platform. With the world's largest web developer site.
+        </p>
+        <div class="typing-text">
+            <span class="one"><span class="spancolor">Web</span> Development <span class="spancolor">Programming
+                </span></span>
+            <span class="two">Mean <span class="spancolor">Stack..</span></span>
+            <br>
+        </div>
+
+        <br><br>
+        <div class="banner-tut">
+            <div class="banner-tut-icons">
+                <a href=""><img src="assets/icons/web/js.svg" alt=""></a>
+                <a href=""><img src="assets/icons/web/angular.svg" alt=""></a>
+                <a href=""><img src="assets/icons/program/python.svg" alt=""></a>
+                <a href=""><img src="assets/icons/databases/mysql.svg" alt=""></a>
+                <a href=""><img src="assets/icons/analytics/ai.svg" alt=""></a>
+                <a href=""><img src="assets/icons/android/ionic.svg" alt=""></a>
+            </div>
+        </div><br><br>
+        <a href="https://www.ssbrinet.com/" target="_blank">
+            <button class="btn-banner">Let's see <mat-icon>sync_alt</mat-icon></button>
+        </a>
+    </div>
+    } @placeholder {
+    <app-spinner-card></app-spinner-card>
+    }
+
+    @defer (on viewport) {
+    <div class="image-container">
+        <img src="assets/images/homepage/bannerleft.png" alt="Ssbr iNet">
+    </div>
+    }@placeholder {
+    <app-spinner-card></app-spinner-card>
+    }
+</section>

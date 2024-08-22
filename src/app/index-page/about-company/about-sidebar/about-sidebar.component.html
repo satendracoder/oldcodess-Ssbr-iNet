@@ -1,0 +1,16 @@
+@for (Mainitem of menuSidebar; track $index) {
+<div class="sidebar-fuild">
+
+    <div class="sidebar-heading">
+        <p>{{Mainitem.link_name}}</p>
+    </div>
+    <nav>
+        <ul class="leftmenu">
+            @for (Subitem of Mainitem.sub_menu; track $index) {
+            <li><a [routerLink]="Subitem.link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">{{Subitem.link_name}}</a></li>
+            }
+        </ul>
+    </nav>
+</div>
+}

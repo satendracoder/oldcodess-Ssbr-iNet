@@ -1,0 +1,18 @@
+<div class="sidebar-fuild">
+
+    <div class="sidebar-heading">
+        <p>CSS Tutorial</p>
+    </div>
+    <nav>
+        @defer (on viewport) {
+        <ul class="leftmenu">
+            @for (Subitem of sideLists; track $index) {
+            <li><a routerLink="/css/{{Subitem.id}}" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">{{Subitem.title}}</a></li>
+            }
+        </ul>
+        } @placeholder {
+        <app-spinner-card></app-spinner-card>
+        }
+    </nav>
+</div>

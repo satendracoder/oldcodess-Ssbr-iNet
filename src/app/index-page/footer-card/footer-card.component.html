@@ -1,0 +1,232 @@
+<!--Footer html coding full with content-->
+@defer (on viewport){
+<footer>
+    <div class="bottom-top">
+        <div class="bottom_text">
+            <div class="topic">
+                <h2><span class="spancolor">Ssbr iNet </span><span style="font-size: 10px;">&#64; iT Hub
+                        Technologies</span>
+                </h2>
+                <p style="font-size: 16px;">Ssbr-iNet is an online training provider with
+                    the most effective learning
+                    Programming, Web Development, App
+                    Development, Server Side Programming, Big Data-Analytics & Exercises, Quizzes , Mock Text , Live
+                    Test, Skills
+                    etc..</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="content" title="Click on the Links">
+        <div class="top">
+            <!-- <div class="logo-details">
+              <a href="/">
+                <img src="assets/images/homepage/fivv.png" alt="Ssbr iNet" height="35px" title="Ssbr iNet Hub"/>
+              </a>
+            </div>
+            <br> -->
+            @defer (on viewport){
+            <div class="media-icons">
+                <a href="https://www.facebook.com/ssbrinet" target="_blank" title="Facebook"><i>
+                        <img src="assets/icons/facebook.svg" alt="facebook" width="35px" height="35px">
+                    </i></a>
+                <a href="https://www.instagram.com/ssbrinet/" target="_blank" title="Instagram"><i>
+                        <img src="assets/icons/instagram.svg" alt="instagram" width="35px" height="35px">
+                    </i></a>
+                <a href="https://twitter.com/ssbrinet" target="_blank" title="Twitter"><i>
+                        <img src="assets/icons/twitter.svg" alt="twitter" width="35px" height="35px">
+                    </i></a>
+
+                <a href="https://www.youtube.com/@ssbrinet" target="_blank" title="Youtube"><i>
+                        <img src="assets/icons/youtube.svg" alt="youtube" width="35px" height="35px">
+                    </i></a>
+
+                <a href="https://www.linkedin.com/company/ssbrinetoffical/?viewAsMember=true" target="_blank"
+                    title="Linkedin"><i>
+                        <img src="assets/icons/linkedin.svg" alt="linkedin" width="35px" height="35px">
+                    </i></a>
+            </div>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+
+            <marquee behavior=""><span style="color:#fff;">❇ All Users are most welcome on this platform! ❇</span>
+            </marquee>
+
+        </div>
+        <div class="link-boxes">
+            @defer (on viewport){
+            @for (footer_item of footerlink; track $index) {
+            <ul class="box">
+                <li class="link_name">{{footer_item.footerHeading}}</li>
+                @for (item of footer_item.footerLinks; track $index) {
+                <li><a [routerLink]="item.urlLinks">{{item.linkName}}</a></li>
+                }
+            </ul>
+            }
+
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+
+
+            @defer (on viewport){
+            <ul class="box">
+                <li class="link_name">Most Usefully</li>
+                <li><a href="https://tools.ssbrinet.com/">All Free Tools <span style="color:#9341f1;">
+                            Feature</span></a></li>
+                <li><a href="/categories/digital_marketing_lists">Digital Marketing</a></li>
+                <li><a href="/courses">Courses Library <span style="color:#9341f1;">Feature</span></a></li>
+                <li><a href="/ebooks">eBooks Library <span style="color:#9341f1;">Feature</span></a></li>
+                <li><a href="mailto:info@sssbrinet.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        info&#64;ssbrinet.com</a></li>
+                <li><a href="https://support.ssbrinet.com/" target="_blank">Supports</a></li>
+            </ul>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+
+            <!-- @defer (on viewport){
+            <ul class="box">
+                <li class="link_name"></li>
+                <li><a routerLink="/artificial_introduction.htm"></a></li>
+                <li><a routerLink="/data_science_introduction.htm"></a></li>
+                <li><a routerLink="/r_introduction.htm"></a></li>
+                <li><a routerLink="/pandas_introduction.htm"></a></li>
+                <li><a routerLink="/matplotlin_introduction.htm"></a></li>
+                <li><a routerLink="/statistics_introduction.htm"></a></li>
+            </ul>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            } -->
+
+            <!-- @defer (on viewport){
+            <ul class="box">
+                <li class="link_name"></li>
+                <li><a routerLink="/artificial_introduction.htm"></a></li>
+                <li><a routerLink="/data_science_introduction.htm"></a></li>
+                <li><a routerLink="/r_introduction.htm"></a></li>
+                <li><a routerLink="/pandas_introduction.htm"></a></li>
+                <li><a routerLink="/matplotlin_introduction.htm"></a></li>
+                <li><a routerLink="/statistics_introduction.htm"></a></li>
+            </ul>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            } -->
+
+            <!-- @defer (on viewport){
+            <ul class="box">
+                <li class="link_name"></li>
+                <li><a routerLink="/artificial_introduction.htm"></a></li>
+                <li><a routerLink="/data_science_introduction.htm"></a></li>
+                <li><a routerLink="/r_introduction.htm"></a></li>
+                <li><a routerLink="/pandas_introduction.htm"></a></li>
+                <li><a routerLink="/matplotlin_introduction.htm"></a></li>
+                <li><a routerLink="/statistics_introduction.htm"></a></li>
+            </ul>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            } -->
+
+            <!-- @defer (on viewport){
+            <ul class="box">
+                <li class="link_name"></li>
+                <li><a routerLink="/artificial_introduction.htm"></a></li>
+                <li><a routerLink="/data_science_introduction.htm"></a></li>
+                <li><a routerLink="/r_introduction.htm"></a></li>
+                <li><a routerLink="/pandas_introduction.htm"></a></li>
+                <li><a routerLink="/matplotlin_introduction.htm"></a></li>
+                <li><a routerLink="/statistics_introduction.htm"></a></li>
+            </ul>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            } -->
+            <!-- 
+            @defer (on viewport){
+            <ul class="box">
+                <li class="link_name"></li>
+                <li><a routerLink="/artificial_introduction.htm"></a></li>
+                <li><a routerLink="/data_science_introduction.htm"></a></li>
+                <li><a routerLink="/r_introduction.htm"></a></li>
+                <li><a routerLink="/matplotlin_introduction.htm"></a></li>
+                <li><a routerLink="/statistics_introduction.htm"></a></li>
+            </ul>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            } -->
+
+        </div>
+    </div>
+
+    <br>
+    <div class="bottom-top">
+        <div class="bottom_text">
+            <div class="topic">
+                <h2><span class="spancolor">What is Our Goal?</span></h2>
+                <p style="font-size: 16px;">We live in a world brimming with information, but not all of it is reliable.
+                    Our primary goal is to equip learners with the skills and knowledge to navigate the online landscape
+                    confidently. We strive to provide:</p>
+                <ul>
+                    <li>
+                        <p> <strong class="spancolor">100% Original Content:</strong> We prioritize high-quality,
+                            accurate
+                            information to ensure you have a safe and enriching learning experience.</p>
+                    </li>
+                    <li>
+                        <p> <strong class="spancolor">Unwavering Commitment to User Experience:</strong> We value your
+                            feedback and continuously refine our platform to make learning more efficient and enjoyable.
+                        </p>
+                    </li>
+                </ul>
+
+                <hr><br><br>
+                <h2><span class="spancolor">Join the Ssbr iNet Community:</span></h2>
+                <p>
+                    Whether you're a complete beginner or a seasoned developer looking to upskill, Ssbr iNet has
+                    something for you. We offer:
+                </p>
+                <ul>
+                    <li>
+                        <p> <strong class="spancolor">Comprehensive Training:</strong>Learn programming, web
+                            development, app development, data analytics, and more, all in one place.</p>
+                    </li>
+                    <li>
+                        <p> <strong class="spancolor">In-Depth Tutorials:</strong> Our team of experts creates
+                            easy-to-follow, detailed tutorials to guide you through every step.
+                        </p>
+                    </li>
+                    <li>
+                        <p> <strong class="spancolor">Regular Updates:</strong> Stay informed about the latest
+                            advancements in the tech world with our notification system. Sign up via email or social
+                            media (links available on our homepage).
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-details">
+        <div class="bottom_links">
+            <ul>
+                <li><a href="https://g.page/r/CUmoZVsB0OPzEAI/review">Review of related</a></li>
+                <li><a href="/company/about_us.htm">&#64;About us</a></li>
+                <li><a href="/company/disclaimer.htm">&#64;Disclaimer</a></li>
+                <li><a href="/company/privacy_policy.htm">&#64;Privacy Policy</a></li>
+                <li><a href="/company/refund_policy.htm">&#64;Refunds Policy</a></li>
+                <li><a href="/company/cookies_policy.htm">&#64;Cookies Policy</a></li>
+            </ul>
+        </div>
+
+
+        <div class="bottom_text">
+            <div><span class="copyright_text"><i class="fa-regular fa-copyright"></i>&#64;<span style="color:#f7f3f3;">
+                        Ssbrinet 2018-2024</span>. All Rights
+                    Reserved.</span></div>
+        </div>
+    </div>
+</footer>
+}@placeholder {
+<app-spinner-card></app-spinner-card>
+}

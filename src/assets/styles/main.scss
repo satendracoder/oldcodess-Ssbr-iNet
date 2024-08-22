@@ -1,0 +1,14 @@
+@import 'variables/variables';
+@import 'variables/mixins';
+
+@import 'partials/header';
+@import 'partials/footer';
+
+@import 'components/button';
+@import 'components/navbar';
+
+@import 'layouts/layouts';
+@import 'layouts/statics.scss';
+@import 'utils/color.utils.scss';
+
+@import 'utils/animation.scss'

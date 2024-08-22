@@ -1,0 +1,47 @@
+<div class="container-ssbr">
+    <div class="row-ssbr">
+        <div class="logo" title="Ssbr iNet Hub">
+            <button mat-dialog-close class="mat-button" style="border-radius:8px;"><a
+                    routerLink="/"><mat-icon>close</mat-icon></a></button>
+            <a href="/"><img src="assets/images/homepage/logo.svg" alt="Ssbr iNet" height="40px" /></a>
+        </div>
+
+        <br><br>
+        <form #loginForm="ngForm" (ngSubmit)="formLogin(loginForm); loginForm.reset()">
+            <div class="form-group">
+                <label for="email" class="form-icons"><i><mat-icon class="icon">mark_email_unread</mat-icon></i></label>
+                <input type="email" name="email" placeholder="Enter Your Email" #email="ngModel" required
+                    class="form-control" ngModel>
+                <!-- <span class="error" *ngIf="email.invalid  && email.touched">Please required email address</span> -->
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password" class="form-icons"><i><mat-icon class="icon">lock</mat-icon></i></label>
+                <input type="password" name="password" placeholder="Enter Your Password" minlength="4" maxlength="15"
+                    #mobile="ngModel" required class="form-control" ngModel>
+                <!-- <span class="error" *ngIf="mobile.invalid  && mobile.touched">Please required Mobile Number</span> -->
+            </div>
+            <br>
+            <!-- here stated Remember and forget password link code  -->
+            <div class="checkbok-forget">
+                <span>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox"> Remember Me</label>
+                </span>
+
+                <span class="Forgot" style="float: right;" (click)="ForgetPasswordopenDialog()">
+                    <i><mat-icon class="icon-forget" style="border-radius: 50px;">lock</mat-icon></i>Forgot Password
+                </span>
+            </div>
+            <br> <br>
+            <div class="form-group">
+                <input type="submit" name="login" value="Login-in" [disabled]="loginForm.invalid" class="btn">
+            </div><br>
+            <p>Don't have an account? <a class="toggle-btn" routerLink="/register"><i
+                        class="fa-solid fa-right-to-bracket"></i> Signup</a></p>
+        </form>
+    </div>
+
+
+    <!-- there stated Signup method -->
+</div>

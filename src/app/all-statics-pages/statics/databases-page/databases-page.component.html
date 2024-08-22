@@ -1,0 +1,46 @@
+<app-main-menu></app-main-menu>
+<div class="statics-ssbr">
+    <div class="statics-ssbr-row">
+        <div class="statics-ssbr-card">
+            <img src="assets/icons/programming.svg" alt="Backend Programm">
+        </div>
+        <div class="statics-ssbr-card">
+            <h1 class="spancolor">Learn Databases </h1>
+            <p>Backend programming refers to the development of the server-side or "back end" of a web application or
+                software system. The backend is responsible for handling data storage, processing, and business logic.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- hare are starting html List of statics Pages -->
+<div class="statics-item">
+    <div class="statics-item-row">
+        @for (databases_item of databases; track $index) {
+        <div class="statics-item-card" [title]="databases_item.tutorialName">
+            <div class="statics-img">
+                <img [src]="databases_item.tutorialImage" alt="">
+            </div>
+            <!-- <div class="statics-heading">
+                <h2>Html Tutorial</h2>
+            </div> -->
+            <div class="statics-link">
+                <div class="statics-link-group">
+                    <!-- <h2>Html Tutorial</h2>
+                    <br> -->
+                    <button><a [href]="databases_item.tutorialNameUrl">{{databases_item.tutorialName}}</a></button>
+                    <button><a
+                            [href]="databases_item.tutorialReferenceUrl">{{databases_item.tutorialReference}}</a></button>
+                    <!-- <button><a href="">Video Tutorial</a></button>
+                    <button><a href="">Get Certified</a></button> -->
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+
+
+<app-best-guidance></app-best-guidance>
+<app-footer-card></app-footer-card>

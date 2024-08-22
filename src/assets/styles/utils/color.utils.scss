@@ -1,0 +1,57 @@
+// Utils CSS List with Class and Id
+.spancolor{
+    color: #26A69A;
+    font-weight: bold;
+  }
+
+
+  nav .leftmenu-link li a.active {
+    color: #26A69A;
+    font-weight: bold;
+}
+
+
+
+  //scroller csss starting hare
+
+.leftmenu ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.leftmenu ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.leftmenu ::-webkit-scrollbar-thumb {
+  background: #26A69A;
+  border-radius: 5px;
+}
+
+
+//scroller Body....
+.main-penal::-webkit-scrollbar {
+  width: 12px;
+}
+
+.main-penal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-penal::-webkit-scrollbar-thumb {
+  background: #26A69A;
+  border-radius: 10px;
+}
+
+//scroller Body....
+// body::-webkit-scrollbar {
+//   width: 12px;
+// }
+
+// body::-webkit-scrollbar-track {
+//   background: transparent;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background: #04AA6D;
+//   border-radius: 10px;
+// }

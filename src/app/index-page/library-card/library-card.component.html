@@ -1,0 +1,37 @@
+<section class="library">
+    <div class="library-heading">
+        <h1>Free- Online <span class="spancolor">Library</span></h1>
+        <br><br>
+        <p>The Largest Free Online Library by <span class="spancolor">Ssbr iNet</span></p>
+    </div>
+    <div class="library-row">
+        @for (libraryItem of library; track $index) {
+        @defer (on viewport){
+        <div class="library-card">
+            <div class="library-card-heading">
+                <mat-icon style="color: #26A69A;">{{libraryItem.icons}}</mat-icon> {{libraryItem.CardTitle_web}}
+            </div>
+            @defer (on viewport){
+            <div class="library-card-icons">
+                @for (item of libraryItem.cardiconsList; track $index) { <div class="Icons-card">
+                    <a [href]="item.Urlbase" [title]="item.LibraryTitle">
+                        <img [src]="item.LibraryImg" [alt]="item.LibraryTitle">
+                        <span>{{item.LibraryTitle}}</span>
+                    </a>
+                </div>}
+            </div>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+
+            <div class="library-card-link">
+                <button><a [href]="libraryItem.linkurl">Let's see</a></button>
+            </div>
+        </div>
+        }@placeholder {
+        <app-spinner-card></app-spinner-card>
+        }
+
+        }
+    </div>
+</section>

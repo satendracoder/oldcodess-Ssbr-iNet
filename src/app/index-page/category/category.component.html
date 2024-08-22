@@ -1,0 +1,18 @@
+<div class="category-fuild">
+    <div class="category-top-heading"><br><br>
+        <h1>Top <span class="spancolor">Categories.</span></h1>
+    </div><br><br>
+    <div class="category-row">
+        @for (category_item of category; track category) {
+        <div class="category-item" [title]="category_item.categoryName">
+            <div class="category-svg">
+                <img [src]="category_item.categoryImg" [alt]="category_item.categoryName">
+            </div>
+            <div class="category-heading">
+                <h2>{{category_item.categoryCount}}</h2>
+                <p>{{category_item.categoryName}}</p>
+            </div>
+        </div>
+        }
+    </div>
+</div>

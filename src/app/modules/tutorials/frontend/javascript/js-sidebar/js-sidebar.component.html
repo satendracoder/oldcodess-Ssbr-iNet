@@ -1,0 +1,14 @@
+<div class="sidebar-fuild">
+
+    <div class="sidebar-heading">
+        <p>JavaScript Tutorial</p>
+    </div>
+    <nav>
+        <ul class="leftmenu">
+            @for (Subitem of jsPostsLink; track $index) {
+            <li><a routerLink="/js/{{Subitem.id}}" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">{{Subitem.title}}</a></li>
+            }
+        </ul>
+    </nav>
+</div>

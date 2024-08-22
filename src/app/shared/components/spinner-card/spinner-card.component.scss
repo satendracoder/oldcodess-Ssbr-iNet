@@ -1,0 +1,22 @@
+.spinner {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-scroll {
+  padding: 20px;
+  border-radius: 50%;
+  border-bottom: 5px dotted #6610f2;
+  border-left: 5px dotted #6610f2;
+  animation: spinnerScroll 0.9s infinite;
+}
+
+
+@keyframes spinnerScroll {
+  100% {
+    rotate: (360deg);
+  }
+}

@@ -1,0 +1,24 @@
+.aside-fuild{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.aside-course-img{
+    width: 100%;
+    margin: 10px;
+    height: 300px;
+}
+
+.aside-course-img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}

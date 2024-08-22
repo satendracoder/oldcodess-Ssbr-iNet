@@ -1,0 +1,63 @@
+<div class="container-ssbr">
+    <div class="row-ssbr">
+        <div class="logo" title="Ssbr iNet Hub">
+            <button mat-dialog-close class="mat-button" style="border-radius:8px;"><a
+                    routerLink="/"><mat-icon>close</mat-icon></a></button>
+            <a href="/"><img src="assets/images/homepage/logo.svg" alt="Ssbr iNet" height="40px" /></a>
+        </div>
+        <br><br>
+        <form #registerForm="ngForm" (ngSubmit)="formSubmit(registerForm); registerForm.reset()">
+            <div class="form-group">
+                <label for="name" class="form-icons"><i><mat-icon class="icon">person</mat-icon></i></label>
+                <input type="text" name="fullName" placeholder="Enter Your Full Name" #name="ngModel" required
+                    class="form-control" ngModel>
+                <!-- <span class="error" *ngIf="name.invalid  && name.touched">Please required username name</span> -->
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="username" class="form-icons"><i><mat-icon class="icon">account_circle</mat-icon></i></label>
+                <input type="text" name="username" placeholder="Enter username" #name="ngModel" required
+                    class="form-control" ngModel>
+                <!-- <span class="error" *ngIf="name.invalid  && name.touched">Please required username name</span> -->
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email" class="form-icons"><i><mat-icon class="icon">mark_email_unread</mat-icon></i></label>
+                <input type="email" name="email" placeholder="Enter Your Email" #email="ngModel" required
+                    class="form-control" ngModel>
+                <!-- <span class="error" *ngIf="email.invalid  && email.touched">Please required email address</span> -->
+            </div>
+            <!-- <br>
+            <div class="form-group">
+                <label for="mobile" class="form-icons"><i><mat-icon class="icon">call</mat-icon></i></label>
+                <input type="text" name="phone" placeholder="Enter Your mobile" minlength="10" maxlength="12"
+                    #mobile="ngModel" required class="form-control" ngModel>
+                <span class="error" *ngIf="mobile.invalid  && mobile.touched">Please required Mobile Number</span>
+            </div> -->
+            <br>
+            <div class="form-group">
+                <label for="password" class="form-icons"><i><mat-icon class="icon">password</mat-icon></i></label>
+                <input type="password" name="password" placeholder="Enter Your Password" minlength="6" maxlength="15"
+                    #mobile="ngModel" required class="form-control" ngModel>
+                <!-- <span class="error" *ngIf="mobile.invalid  && mobile.touched">Please required Mobile Number</span> -->
+            </div>
+
+            <!-- <input type="checkbox" name="checkbox" id="checkbox" style="width: 20px;" [checked] ngModel>
+            <label for="checkbox">I’m in for emails with exciting
+                discounts and newsletter.</label>
+            <br /> -->
+            <br>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Signup" [disabled]="registerForm.invalid" class="btn">
+            </div>
+            <span>By signing up, you agree to our <a routerLink="/company/terms_condition">Terms of Use</a> and <a
+                    routerLink="/company/privacy_policy">Privacy Policy</a>.</span>
+
+            <br><br>
+            <p>Already have an account ? <a class="toggle-btn" routerLink="/login"><i
+                        class="fa-solid fa-right-to-bracket"></i> Login-in</a></p>
+        </form>
+    </div>
+
+
+</div>

@@ -1,0 +1,58 @@
+<!--Top Categories box and content box in html code with icone and padding and border 1px solid grey -->
+<section>
+    <div class="top-categories">
+        <br /><br />
+        <h1 [style.text-align]="'center'"><i class="fa fa-th" aria-hidden="true"></i> <b>
+                All-</b> Our <span class="spancolor">Services</span><mat-icon>cards</mat-icon></h1><br />
+        <p [style.text-align]="'center'"><span class="spancolor">Ssbr-iNet-Hub</span> is an online training provider
+            with the most effective learning
+            Programming.</p>
+
+        <div class="top-categories-row">
+            @for (Categories of CategoriesList; track CategoriesList) {
+            @defer (on viewport) {
+            <div class="top-categories-item">
+                <a [href]="Categories.CategoriesTitlelink" [title]="Categories.CategoriesTitle">
+                    <img [src]="Categories.CategoriesImg" [alt]="Categories.CategoriesTitle" width="100px" height="90px"
+                        style="border-radius: 50%;" />
+                    <h2 style="text-align: center; font-size: 20px;"><b>
+                            {{Categories.CategoriesTitle}}</b> </h2>
+                    <!-- <p>{{Categories.CategoriesParagraph}}</p> -->
+                    <br>
+                    <hr>
+                    <div class="check-link">
+                        @defer (on viewport) {
+                        <ul>
+                            <li><i style="color: #26A69A;"><mat-icon>check_circle</mat-icon></i>
+                                {{Categories.Categorieslink_a}}</li>
+                            <li><i style="color: #26A69A;"><mat-icon>check_circle</mat-icon></i>
+                                {{Categories.Categorieslink_b}}</li>
+                            <li><i style="color: #26A69A;"><mat-icon>check_circle</mat-icon></i>
+                                {{Categories.Categorieslink_c}}</li>
+                            <li><i style="color: #26A69A;"><mat-icon>check_circle</mat-icon></i>
+                                {{Categories.Categorieslink_d}}</li>
+                            <li><i style="color: #26A69A;"><mat-icon>check_circle</mat-icon></i>
+                                {{Categories.Categorieslink_e}}</li>
+                            <li><i style="color: #26A69A;"><mat-icon>check_circle</mat-icon></i>
+                                {{Categories.Categorieslink_f}}</li>
+                        </ul>
+                        }@placeholder {
+                        <app-spinner-card></app-spinner-card>
+                        }
+                        <div class="linkbtn">
+                            <button>Let's see more </button>
+                        </div>
+
+                    </div>
+                </a>
+                <br>
+            </div>
+            }@placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+            }
+        </div>
+        <br /><br /><br /><br />
+    </div>
+
+</section>

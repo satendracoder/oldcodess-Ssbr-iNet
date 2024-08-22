@@ -1,0 +1,70 @@
+<section class="quiz">
+    <!-- <div class="quiz-heading">All Exercises <span class="spancolor">& Quizzes</span></div> -->
+    <div class="quiz-row">
+        <div class="quiz-card quizColor">
+            @defer (on viewport) {
+            <div class="quiz-img">
+                <img src="assets/images/homepage/Quiz.jpg" alt="Quiz">
+            </div>
+            } @placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+            @defer (on viewport) {
+            <div class="quiz-para">
+                <div class="quiz-heading">Quizzes</div>
+                <div class="quiz-text">We have made every programming, competition,job interview etc into quiz. Which
+                    will help you a lot.</div>
+                <div class="quiz-btn">
+                    <button><a href="">Let's see</a></button>
+                </div>
+            </div>
+            } @placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+        </div>
+        <div class="quiz-card exerciseColor">
+            @defer (on viewport) {
+            <div class="quiz-img">
+                <img src="assets/images/homepage/Exercise.jpg" alt="" srcset="">
+            </div>
+            } @placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+            @defer (on viewport) {
+            <div class="quiz-para">
+                <div class="quiz-heading">Exercises</div>
+                <div class="quiz-text">Here you have developed exercises to strengthen every course or skill. We hope
+                    that it will help you well.</div>
+                <div class="quiz-btn">
+                    <button><a href="">Let's see</a></button>
+                </div>
+            </div>
+            } @placeholder {
+            <app-spinner-card></app-spinner-card>
+            }
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- //Mock test card  -->
+    <div class="exercises">
+        @defer (on viewport) {
+        <div class="exercises-row">
+            <div class="exercises-para">
+                <div class="exercises-heading">Mock ♻️ Test</div>
+                <div class="exercises-text">In this, we have made this for small children to read. Which is taught
+                    through animation. Kids will
+                    keep learning on this easily</div>
+                <div class="exercises-btn">
+                    <button><a href="">Let's see</a></button>
+                </div>
+            </div>
+            <div class="exercises-img">
+                <img src="assets/images/homepage/mock.jpg" alt="">
+            </div>
+        </div>
+        } @placeholder {
+        <app-spinner-card></app-spinner-card>
+        }
+    </div>
+</section>

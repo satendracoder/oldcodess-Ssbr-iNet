@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-ssbr{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: transparent; 
+    opacity: 5;
+    color: #fff;
+}
+
+.row-ssbr{
+    width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 1px rgb(192, 190, 190);
+    padding: 20px 20px;
+    text-align: center;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+.row-ssbr .logo img{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4px 15px;
+}
+
+.form-group{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+/* Style the form icons */
+.icon {
+    padding: 10px;
+    background: #e8f0fe;
+    color: #000;
+    width: 45px;
+    text-align: center;
+    border-right: 1px solid #1a1b1b;
+    border-radius: 50px;
+    position: absolute;
+  }
+
+  
+/* Style the input fields */
+.form-control{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  /* .form-control:focus {
+   box-shadow: 0px 0px 1px blue;
+  } */
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+
+
+.form-control{
+    width: 100%;
+    height: 43px;
+    border-radius: 1px;
+    border: none;
+    font-size: 16px;
+    padding: 0px 70px;
+    outline: none;
+    background: #e8f0fe;
+    float:right;
+    border-radius: 50px;
+}
+
+.form-icons{
+    font-size: 23px;
+    /* background: antiquewhite; */
+    line-height: 30px;
+    resize: none;
+    outline: 0;
+ }
+
+.btn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #09c009;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    &[disabled]{
+        background-color: #a8aeac;
+        color: rgba(0, 0, 0, 0.386);
+    }
+}
+
+ 
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+    border-radius: 1px;
+    border-radius: 50px;
+
+}
+
+input.ng-touched.ng-valid{
+    border: 1px solid #e8f0fe;
+    border-radius: 1px;
+    border-radius: 50px;
+}
+
+.error{
+    color: red;
+}
+
+.toggle-btn{
+    cursor: pointer;
+}
+
+.mat-button {
+    border: none;
+    padding: 5px;
+    outline-color: #fff;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+    font-size: 20px
+}
+
+.checkbok-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Forgot {
+    text-decoration: none;
+    float: right;
+    color:#fff;
+    font-size: 16px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.Forgot:hover {
+    color: green;
+}

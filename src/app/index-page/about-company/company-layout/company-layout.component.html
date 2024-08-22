@@ -1,0 +1,33 @@
+<app-main-menu></app-main-menu>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened class="leftmenu">
+        <app-about-sidebar></app-about-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <mat-icon (click)="sidenav.toggle()" style="cursor: pointer;" class="toggleMenu">menu</mat-icon>
+            <app-submenu-card></app-submenu-card>
+        </mat-toolbar>
+
+        <!-- All Overview Main Layout with display code with css -->
+        <div class="main-penal">
+            <!-- Main Layout code with css -->
+            <div class="main-overview">
+                <router-outlet></router-outlet>
+            </div>
+
+            <!-- Aside Bar code with css -->
+            <div class="main-sidebar">
+                <div class="main-sidebar-ads" id="dl">
+                    <div class="dt">
+                        <br>
+                        <app-aside-card></app-aside-card>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-footer-card></app-footer-card>
+    </mat-sidenav-content>
+</mat-sidenav-container>

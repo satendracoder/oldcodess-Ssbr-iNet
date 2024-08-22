@@ -1,0 +1,43 @@
+<app-main-menu></app-main-menu>
+<div class="statics-ssbr">
+    <div class="statics-ssbr-row">
+        <div class="statics-ssbr-card">
+            <img src="assets/icons/skills.svg" alt="Digital-Marketing">
+        </div>
+        <div class="statics-ssbr-card">
+            <h1 class="spancolor">Digital-Marketing</h1>
+            <p>Digital marketing is the practice of promoting products, services, or brands using digital channels and
+                technologies. It encompasses various online tactics and strategies to reach and engage with target
+                audiences through digital mediums such as websites, search engines, social media platforms, email,
+                mobile apps, and other digital channels.</p>
+        </div>
+    </div>
+</div>
+
+<!-- hare are starting html List of statics Pages -->
+<div class="statics-item">
+    <div class="statics-item-row">
+        @for (digital_item of digital_marketing; track $index) {
+        <div class="statics-item-card" [title]="digital_item.tutorialName">
+            <div class="statics-img">
+                <img [src]="digital_item.tutorialImage" alt="">
+            </div>
+            <!-- <div class="statics-heading">
+                <h2>Html Tutorial</h2>
+            </div> -->
+            <div class="statics-link">
+                <div class="statics-link-group">
+                    <!-- <h2>Html Tutorial</h2>
+                    <br> -->
+                    <button><a [href]="digital_item.tutorialNameUrl">{{digital_item.tutorialName}}</a></button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+
+
+<app-best-guidance></app-best-guidance>
+<app-footer-card></app-footer-card>

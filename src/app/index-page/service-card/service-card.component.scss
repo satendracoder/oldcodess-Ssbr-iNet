@@ -1,0 +1,210 @@
+/* this is a top categories coding with css and click on this button then open categories file */
+
+.top-categories {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+    /* background-image: url(/assets/image/home/ourteam.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; */
+     font-family: Roboto, Helvetica Neue, sans-serif;
+     padding: 30px 0px;
+}
+
+.top-categories>h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.top-categories-row {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Default grid with 3 columns */
+    gap: 0px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.top-categories-item {
+    flex-basis: 23%;
+    border: 0.5px solid rgb(222, 221, 221);
+    border-radius: 5px;
+    /* text-align: center; */
+    // background-color: #fff;
+    background-color: #fff;
+    margin: 5px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px #4f4b4b;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    /* padding: 10px 10px; */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.9s ease-in-out forwards;
+    transition:all ease 1s;
+}
+
+.top-categories-item:hover {
+    top: 0px;
+    box-shadow: 0px 0px 4px #eee;
+    transform: translateX(30px);
+}
+
+
+
+.top-categories-item>img {
+    margin: 20px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #0C5C8F;
+}
+
+.top-categories-item>h2 {
+    font-weight: 500;
+    color: #212121;
+    text-align: center;
+}
+
+
+.top-categories-item>a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.top-categories-item>a>p {
+    color: #212121;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.top-categories-item:hover>a>p {
+    color: green;
+    font-weight: 600;
+    text-decoration: none;
+    /* text-shadow: 0px 0px 10px green; */
+}
+
+.top-categories-item .check-link {
+    padding: 0px 5px;
+    text-align: left;
+}
+
+.top-categories-item .check-link ul li {
+    list-style: none;
+    padding: 6px 8px;
+    color: #212121;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(50px);
+    animation: fadeInUp 0.9s ease-in-out forwards;
+}
+
+.linkbtn {
+    text-align: left;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.linkbtn button {
+    border: none;
+    background-color: #6610f2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.linkbtn button:hover {
+    background: #26A69A;
+    color: #fff;
+    // padding: 8px 16px;
+    transform: skewX(10deg);
+    box-shadow: 0px 0px 3px #26A69A;
+    border-radius: 50px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .top-categories-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .top-categories>h1 {
+        font-size: 50px;
+        font-weight: 600;
+        padding-top: 10px;
+
+    }
+
+    .top-categories-item {
+        flex-basis: 29.33%;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-categories-row {
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Grid with 2 columns */
+        gap: 10px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .top-categories>h1 {
+        font-size: 50px;
+        font-weight: 600;
+        padding-top: 10px;
+
+    }
+
+    .top-categories-item {
+        flex-basis: 46%;
+        padding: 45px 0px;
+        margin: 25px 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-categories-row {
+        width: 95%;
+        display: block;
+    }
+
+    .top-categories>h1 {
+        font-size: 34px;
+        font-weight: 600;
+        padding-top: 10px;
+
+    }
+
+    .top-categories-item {
+        max-height: 420px;
+        margin: 30px;
+    }
+}

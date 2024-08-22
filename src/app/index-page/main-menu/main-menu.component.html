@@ -1,0 +1,221 @@
+<nav>
+    <div class="wrapper">
+        <div class="logo"><a href="/">
+                <img src="assets/images/homepage/logossbr.png" alt="">
+            </a></div>
+
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+
+            <label for="close-btn" class="btn close-btn">
+                <i><mat-icon>close</mat-icon></i>
+            </label>
+            <li><a href="/">Home</a></li>
+
+            @for (item of mainMenu; track $index) {
+            <li><a href="" class="desktop-item">{{item.mainLink}}<mat-icon>arrow_drop_down</mat-icon></a>
+                <input type="checkbox" [id]="item.showMega">
+                <label [for]="item.showMega"
+                    class="mobile-item">{{item.mainLink}}<mat-icon>arrow_drop_down</mat-icon></label>
+                <div class="mega-box">
+                    <div class="content">
+                        @for (subitem of item.subMenu; track $index) {
+                        <div class="row">
+                            <h4 class="import-heading"><b>{{subitem.heading}}</b></h4>
+                            @for (Megaitem of subitem.megaLink; track $index) {
+                            <ul class="mega-links">
+                                <li [title]="Megaitem.mega_name"><a [href]="Megaitem.mega_link" id="icons">
+                                        <img [src]="Megaitem.mega_icons"
+                                            [alt]="Megaitem.mega_name"><span>{{Megaitem.mega_name}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            }
+
+                        </div>
+                        }
+                    </div>
+                </div>
+            </li>
+            }
+
+
+            @for (item of mainService; track $index) {
+            <li><a href="#" class="desktop-item">{{item.mainLink}}<mat-icon>arrow_drop_down</mat-icon></a>
+                <input type="checkbox" [id]="item.showMega">
+                <label [for]="item.showMega"
+                    class="mobile-item">{{item.mainLink}}<mat-icon>arrow_drop_down</mat-icon></label>
+                <div class="mega-box">
+                    <div class="content">
+                        @for (subitem of item.subMenu; track $index) {
+                        <h4><b>{{subitem.heading}}</b></h4>
+                        <div class="row">
+                            @for (Megaitem of subitem.megaLink; track $index) {
+                            <ul class="mega-links">
+                                <li [title]="Megaitem.mega_name" class="ourServices"
+                                    style="padding: 10px 0px; margin: 10px 0px;"><a [href]="Megaitem.mega_link"
+                                        id="icons">
+                                        <img [src]="Megaitem.mega_icons" [alt]="Megaitem.mega_name">
+                                        <span>{{Megaitem.mega_name}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            }
+                        </div>
+                        }
+                    </div>
+                </div>
+            </li>
+            }
+
+            <li><a href="#" class="desktop-item">Digital-Marketing<mat-icon>arrow_drop_down</mat-icon></a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Digital-Marketing<mat-icon>arrow_drop_down</mat-icon></label>
+                <ul class="drop-menu">
+                    <li class="demo-section"><a href="#" id="icons" target="_blank">
+                            <img src="assets/icons/digital/email.svg" alt="Courses Library" width="50px" height="50px">
+                            <span> Email Marketing </span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" target="_blank" id="icons">
+                            <img src="assets/icons/digital/content.svg" alt="eBook Library" width="50px" height="50px">
+                            <span> Content Marketing</span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" target="_blank" id="icons">
+                            <img src="assets/icons/digital/user-seo.svg" alt="Blog Newsletter" width="50px"
+                                height="50px">
+                            <span>Search Engine(SEO) </span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" id="icons">
+                            <img src="assets/icons/digital/google.svg" alt="Blog Newsletter" width="50px" height="50px">
+                            <span>Google Ads(Adwords)</span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" target="_blank" id="icons">
+                            <img src="assets/icons/digital/affiliate.svg" alt="Blog Newsletter" width="50px"
+                                height="50px">
+                            <span>Affiliate Marketing</span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" id="icons">
+                            <img src="assets/icons/facebook.svg" alt="Blog Newsletter" width="50px" height="50px">
+                            <span>Facebook Marketing</span>
+                        </a>
+                    </li>
+
+                    <li><a href="https://kaszillatech.com/" target="_blank" id="icons">
+                            <img src="assets/icons/right.svg" alt="Blog Newsletter" width="50px" height="50px">
+                            <span>Learn More</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a href="#" class="desktop-item">Feature <mat-icon>arrow_drop_down</mat-icon></a>
+                <input type="checkbox" id="showDropD">
+                <label for="showDropD" class="mobile-item">Feature Key<mat-icon>arrow_drop_down</mat-icon></label>
+                <ul class="drop-menu">
+                    <li class="demo-section"><a href="#" id="icons" target="_blank">
+                            <img src="assets/icons/ourservice/courses.svg" alt="Courses Library" width="50px"
+                                height="50px">
+                            <span> Upskill Library <span style="color:#9341f1; font-size: 8px;"> Feature</span></span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" target="_blank" id="icons">
+                            <img src="assets/icons/ourservice/book.svg" alt="eBook Library" width="50px" height="50px">
+                            <span> eBooks Library <span style="color:#9341f1; font-size: 8px;"> Feature</span></span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" id="icons">
+                            <img src="assets/icons/ourservice/business.svg" alt="Blog Newsletter" width="50px"
+                                height="50px">
+                            <span>Web Building <span style="color:#9341f1; font-size: 8px;"> Feature</span></span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" target="_blank" id="icons">
+                            <img src="assets/icons/ourservice/youtube.svg" alt="Blog Newsletter" width="50px"
+                                height="50px">
+                            <span>Learners Youtube<span style="color:#9341f1; font-size: 8px;"> Feature</span></span>
+                        </a>
+                    </li>
+
+                    <li><a href="#" id="icons">
+                            <img src="assets/icons/ourservice/reference.svg" alt="Blog Newsletter" width="50px"
+                                height="50px">
+                            <span>Refereance<span style="color:#9341f1; font-size: 8px;"> Feature</span></span>
+                        </a>
+                    </li>
+
+                    <li><a href="https://kaszillatech.com/" target="_blank" id="icons">
+                            <img src="assets/icons/ourservice/tools.svg" alt="Blog Newsletter" width="50px"
+                                height="50px">
+                            <span>All Free Tools<span style="color:#9341f1; font-size: 8px;"> Feature</span></span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a href="#" class="desktop-item">More<mat-icon>arrow_drop_down</mat-icon></a>
+                <input type="checkbox" id="showDropa">
+                <label for="showDropa" class="mobile-item">More<mat-icon>arrow_drop_down</mat-icon></label>
+                <ul class="drop-menu">
+
+                    <li><a href="/company/about_us" id="icons">
+                            <img src="assets/icons/more/about.svg" alt="Blog Newsletter" width="50px" height="50px">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+
+                    <li><a href="/company/careers" id="icons">
+                            <img src="assets/icons/more/career.svg" alt="Blog Newsletter" width="50px" height="50px">
+                            <span>Careers <span style="color:red; font-size: 16px;">Hiring Closed</span></span>
+                        </a>
+                    </li>
+
+                    <li><a href="/company/frequently_asked_questions" id="icons">
+                            <img src="assets/icons/more/question.svg" alt="Blog Newsletter" width="50px" height="50px">
+                            <span>FAQ's </span>
+                        </a>
+                    </li>
+
+                    <li><a href="https://support.ssbrinet.com/" id="icons" target="_blank">
+                            <img src="assets/icons/ourservice/help.svg" alt="Courses Library" width="50px"
+                                height="50px">
+                            <span>Supports</span>
+                        </a>
+                    </li>
+
+                    <li><a href="mailto:info@sssbrinet.com" target=" _blank" id="icons">
+                            <img src="assets/icons/digital/email.svg" alt="eBook Library" width="50px" height="50px">
+                            <span>info&#64;ssbrinet.com</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a matTooltip="Theme"><mat-slide-toggle (click)="toggleTheme()"></mat-slide-toggle></a></li>
+
+            @if (!isLoggedIn) {
+            <li><a href="/login" class="loginbtn">Login</a>
+            </li>
+            }@else {
+            <li class="loginuser"><img src="assets/images/homepage/sate.jpg" alt="User"></li>
+            }
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i>Menu<mat-icon>arrow_drop_down</mat-icon></i></label>
+    </div>
+</nav>

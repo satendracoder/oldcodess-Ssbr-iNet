@@ -1,0 +1,45 @@
+<app-main-menu></app-main-menu>
+<div class="statics-ssbr">
+    <div class="statics-ssbr-row">
+        <div class="statics-ssbr-card">
+            <img src="assets/icons/mobile-app.svg" alt="Web_Developer">
+        </div>
+        <div class="statics-ssbr-card">
+            <h1 class="spancolor">Mobile App-Development</h1>
+            <p>Mobile app development is a dynamic field that evolves with advancements in technology, and it plays a
+                significant role in providing users with a wide range of services and functionalities on their mobile
+                devices.</p>
+        </div>
+    </div>
+</div>
+
+<!-- hare are starting html List of statics Pages -->
+<div class="statics-item">
+    <div class="statics-item-row">
+        @for (mobile_item of app_developer; track $index) {
+        <div class="statics-item-card" [title]="mobile_item.tutorialName">
+            <div class="statics-img">
+                <img [src]="mobile_item.tutorialImage" alt="">
+            </div>
+            <!-- <div class="statics-heading">
+                <h2>Html Tutorial</h2>
+            </div> -->
+            <div class="statics-link">
+                <div class="statics-link-group">
+                    <!-- <h2>Html Tutorial</h2>
+                    <br> -->
+                    <button><a [href]="mobile_item.tutorialNameUrl">{{mobile_item.tutorialName}}</a></button>
+                    <button><a [href]="mobile_item.tutorialReferenceUrl">{{mobile_item.tutorialReference}}</a></button>
+                    <!-- <button><a href="">Video Tutorial</a></button>
+                    <button><a href="">Get Certified</a></button> -->
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+
+
+<app-best-guidance></app-best-guidance>
+<app-footer-card></app-footer-card>

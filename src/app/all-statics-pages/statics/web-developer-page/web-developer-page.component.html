@@ -1,0 +1,46 @@
+<app-main-menu></app-main-menu>
+<div class="statics-ssbr">
+    <div class="statics-ssbr-row">
+        <div class="statics-ssbr-card">
+            <img src="assets/images/homepage/web.svg" alt="Web_Developer">
+        </div>
+        <div class="statics-ssbr-card">
+            <h1 class="spancolor">Web-Development</h1>
+            <p>A front-end developer is a type of programmer who specializes in coding and designing the user interface
+                (UI) and user experience (UX) of websites and web applications. They are responsible for creating the
+                visual elements that users interact with on a website, such as layouts, navigation menus, buttons,
+                forms, and other graphical elements.</p>
+        </div>
+    </div>
+</div>
+
+<!-- hare are starting html List of statics Pages -->
+<div class="statics-item">
+    <div class="statics-item-row">
+        @for (Web_item of web_develope; track $index) {
+        <div class="statics-item-card" [title]="Web_item.tutorialName">
+            <div class="statics-img">
+                <img [src]="Web_item.tutorialImage" alt="">
+            </div>
+            <!-- <div class="statics-heading">
+                <h2>Html Tutorial</h2>
+            </div> -->
+            <div class="statics-link">
+                <div class="statics-link-group">
+                    <!-- <h2>Html Tutorial</h2>
+                    <br> -->
+                    <button><a [href]="Web_item.tutorialNameUrl">{{Web_item.tutorialName}}</a></button>
+                    <button><a [href]="Web_item.tutorialReferenceUrl">{{Web_item.tutorialReference}}</a></button>
+                    <!-- <button><a href="">Video Tutorial</a></button>
+                    <button><a href="">Get Certified</a></button> -->
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+
+
+<app-best-guidance></app-best-guidance>
+<app-footer-card></app-footer-card>
