@@ -11,7 +11,7 @@
             <label for="close-btn" class="btn close-btn">
                 <i><mat-icon>close</mat-icon></i>
             </label>
-            <li><a href="/">Home</a></li>
+      
 
             @for (item of mainMenu; track $index) {
             <li><a href="" class="desktop-item">{{item.mainLink}}<mat-icon>arrow_drop_down</mat-icon></a>
@@ -206,8 +206,6 @@
 
                 </ul>
             </li>
-
-            <li><a matTooltip="Theme"><mat-slide-toggle (click)="toggleTheme()"></mat-slide-toggle></a></li>
 
             @if (!isLoggedIn) {
             <li><a href="/login" class="loginbtn">Login</a>
